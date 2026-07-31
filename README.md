@@ -20,7 +20,7 @@ This project predicts student dropout risk at a university level using socioecon
 ├── basline_model.ipynb               # Model 1 — Logistic Regression
 ├── xgboost_model.ipynb               # Model 2 — XGBoost
 ├── eda.ipynb                         # Exploratory Data Analysis
-├── working.ipynb                     # Scratch / working notebook
+├── feature_engineering.ipynb          #working and feature engineering notebook
 ├── requirements.txt
 └── README.md
 ```
@@ -182,6 +182,9 @@ Key libraries: `scikit-learn`, `xgboost`, `pandas`, `numpy`, `matplotlib`, `seab
 
 ## How to Run
 
-1. Run `eda.ipynb` to explore the raw data.
-2. Run `basline_model.ipynb` top to bottom to train and save the Logistic Regression model.
-3. Run `xgboost_model.ipynb` top to bottom to train, evaluate, and save the XGBoost model with all plots.
+
+1. Run 'feature_engineering.ipynb' to handle missing values, encode categorical variables, scale features, and generate new predictors.
+2. Run `eda.ipynb` to explore the raw data. 
+3. Run `basline_model.ipynb` top to bottom to train and save the Logistic Regression model.
+4. Run `xgboost_model.ipynb` top to bottom to train, evaluate, and save the XGBoost model with all plots.
+Always run notebooks in order, since each depends on outputs from the previous one
