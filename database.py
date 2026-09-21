@@ -3,7 +3,8 @@ from pathlib import Path
 from datetime import datetime
 
 # Database location
-DB_PATH = Path("database") / "students.db"
+BASE_DIR = Path(__file__).resolve().parent
+DB_PATH = BASE_DIR / "database" / "students.db"
 
 
 def get_connection():
@@ -179,7 +180,3 @@ def get_assessment_history(student_id):
     conn.close()
 
     return [dict(row) for row in assessments]
-
-
-# Create tables when this module is loaded
-create_tables()
