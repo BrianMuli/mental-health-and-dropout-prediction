@@ -231,8 +231,6 @@ with st.sidebar:
     st.markdown(f"**Train AUC:** {meta.get('train_auc', float('nan')):.3f}")
     trained = meta.get("date_trained", "—")
     st.markdown(f"**Trained:** {trained}")
-    with st.expander("Hyperparameters"):
-        st.json(meta.get("hyperparameters", {}))
 
 # ----------------------------------------------------------------------
 # Input form — built dynamically from the model's own feature list,
